@@ -47,9 +47,7 @@ flutter:
 
   # Assets declaration
   assets:
-    - assets/images/image_one.jpeg
-    - assets/images/image_two.jpeg
-    - assets/images/image_three.jpeg
+    - assets/images/
     - assets/splash/splash_screen.gif
     - assets/logos/
 

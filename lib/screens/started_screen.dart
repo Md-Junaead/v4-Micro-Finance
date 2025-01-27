@@ -6,61 +6,52 @@ class StartedScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF06426D), // Background color
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
+      body: Stack(
         children: [
-          // Image Slider
-          Container(
-            margin: EdgeInsets.only(
-                top:
-                    MediaQuery.of(context).size.height * 0.10, // 10% margin top
-                bottom: MediaQuery.of(context).size.height *
-                    0.10), // 10% margin bottom
-            child: CarouselSlider(
-              options: CarouselOptions(
-                height: MediaQuery.of(context).size.height *
-                    0.6, // Slider height 60% of screen
-                enlargeCenterPage:
-                    true, // Enlarges center item for better visibility
-                autoPlay: true, // Enables auto sliding
-                viewportFraction: 1.0, // Ensures full width coverage
-              ),
-              items: [
-                'assets/images/image_one.jpeg',
-                'assets/images/image_two.jpeg',
-                'assets/images/image_three.jpeg',
-              ].map((imagePath) {
-                return ClipRRect(
-                  borderRadius: BorderRadius.circular(
-                      MediaQuery.of(context).size.width *
-                          0.05), // Rounded corners for images
-                  child: Image.asset(
-                    imagePath,
-                    width:
-                        MediaQuery.of(context).size.width, // Full width images
-                    fit:
-                        BoxFit.cover, // Ensures images cover container properly
-                  ),
-                );
-              }).toList(),
+          // Background Image Slider
+          CarouselSlider(
+            options: CarouselOptions(
+              height: MediaQuery.of(context).size.height, // Full screen height
+              autoPlay: true, // Enables auto sliding
+              autoPlayInterval: Duration(seconds: 3), // 3 sec duration
+              viewportFraction: 1.0, // Ensures full width coverage
+              enableInfiniteScroll: true, // Infinite loop of images
             ),
+            items: [
+              'assets/images/image_one.png',
+              'assets/images/image_two.png',
+              'assets/images/image_three.png',
+              'assets/images/image_four.png',
+            ].map((imagePath) {
+              return Container(
+                width: MediaQuery.of(context).size.width, // Full width
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage(imagePath),
+                    fit: BoxFit.cover, // Covers entire screen
+                  ),
+                ),
+              );
+            }).toList(),
           ),
+
           // Buttons Section
-          Padding(
-            padding: EdgeInsets.symmetric(
-                horizontal: MediaQuery.of(context).size.width *
-                    0.12), // Horizontal padding for buttons
+          Positioned(
+            bottom:
+                MediaQuery.of(context).size.height * 0.1, // Position buttons
+            left: MediaQuery.of(context).size.width * 0.12,
+            right: MediaQuery.of(context).size.width * 0.12,
             child: Row(
               mainAxisAlignment:
-                  MainAxisAlignment.spaceBetween, // Spacing between buttons
+                  MainAxisAlignment.spaceBetween, // Space buttons
               children: [
                 _buildButton(context, 'Login', () {
                   Navigator.pushNamed(context,
                       RoutesName.signInScreen); // Navigates to login screen
                 }),
                 _buildButton(context, 'Get Started', () {
-                  Navigator.pushNamed(context, RoutesName.signupScreen);
+                  Navigator.pushNamed(context,
+                      RoutesName.signupScreen); // Navigates to signup screen
                 }),
               ],
             ),
