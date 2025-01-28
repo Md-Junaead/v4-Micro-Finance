@@ -70,4 +70,19 @@ class RoutesName {
 
   //AppDrawerScreen routes name
   static const String appDrawer = 'AppDrawer';
+
+  //AboutInfoScreen routes name
+  static const String aboutInfoScreen = 'AboutInfoScreen';
+
+  //HelpScreen routes name
+  static const String helpScreen = 'HelpScreen';
+
+  //LoanRequestScreen routes name
+  static const String loanRequestScreen = 'LoanRequestScreen';
+
+  //LoanStatusScreen routes name
+  static const String loanStatusScreen = 'LoanStatusScreen';
+
+  //PayEmiScreen routes name
+  static const String payEmiScreen = 'PayEmiScreen';
 }

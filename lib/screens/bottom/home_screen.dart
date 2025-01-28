@@ -48,7 +48,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   // Demo API call to simulate fetching balance
   Future<String> fetchBalance() async {
-    await Future.delayed(const Duration(seconds: 2)); // Simulate delay
+    await Future.delayed(const Duration(seconds: 1)); // Simulate delay
     return "\$1500"; // Return a dummy balance after the delay
   }
 
@@ -66,9 +66,21 @@ class _HomeScreenState extends State<HomeScreen> {
         "text": "Check Balance",
         "screen": CheckBalanceScreen()
       },
-      {"icon": Icons.money_off, "text": "Withdraw", "screen": WithdrawScreen()},
-      {"icon": Icons.people, "text": "Referrals", "screen": ReferralsScreen()},
-      {"icon": Icons.speed, "text": "Quick Loan", "screen": QuickLoanScreen()},
+      {
+        "icon": Icons.money_off,
+        "text": "Withdraw",
+        "screen": WithdrawScreen()
+      }, //WithdrawScreen
+      {
+        "icon": Icons.people,
+        "text": "Referrals",
+        "screen": ReferralsScreen()
+      }, //ReferralsScreen
+      {
+        "icon": Icons.speed,
+        "text": "Quick Loan",
+        "screen": QuickLoanScreen()
+      }, //Quick Loan
       {
         "icon": Icons.card_giftcard,
         "text": "Packages",
