@@ -14,7 +14,7 @@ class _LoanStatusScreenState extends State<LoanStatusScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const CommonAppBar(title: "Loan Status Screen"),
+      appBar: const CommonAppBar(title: "Loan Status"),
       body: Center(
         child: Text('This is the Loan Status Screen'),
       ),

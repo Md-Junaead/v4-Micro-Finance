@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:v1_micro_finance/screens/withdraw/bank/withdrawal.dart';
 import 'package:v1_micro_finance/screens/withdraw/bank/crypto_withdrawal_screen.dart';
+import 'package:v1_micro_finance/screens/withdraw/bank/withdrawal.dart';
 
-class WithdrawScreen extends StatefulWidget {
+class LoanWithdrawScreen extends StatefulWidget {
   @override
-  _WithdrawScreenState createState() => _WithdrawScreenState();
+  _LoanWithdrawScreenState createState() => _LoanWithdrawScreenState();
 }
 
-class _WithdrawScreenState extends State<WithdrawScreen> {
+class _LoanWithdrawScreenState extends State<LoanWithdrawScreen> {
   // Placeholder for balance data, this will be replaced with actual API data
   String withdrawalBalance = "Loading...";
 

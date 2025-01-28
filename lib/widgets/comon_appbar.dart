@@ -28,7 +28,7 @@ class CommonAppBar extends StatelessWidget implements PreferredSizeWidget {
         titleTextStyle: const TextStyle(
             color: Colors.white, fontSize: 35, fontWeight: FontWeight.bold),
         shape: const RoundedRectangleBorder(
-          borderRadius: BorderRadius.vertical(bottom: Radius.circular(25)),
+          borderRadius: BorderRadius.vertical(bottom: Radius.circular(15)),
         ),
       ),
     );

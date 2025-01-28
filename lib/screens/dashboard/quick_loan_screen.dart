@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:v1_micro_finance/screens/dashboard/check_balance_screen.dart';
-import 'package:v1_micro_finance/screens/dashboard/deposit_screen.dart';
-import 'package:v1_micro_finance/screens/dashboard/referrals_screen.dart';
-import 'package:v1_micro_finance/screens/dashboard/withdraw_screen.dart';
+import 'package:v1_micro_finance/screens/loan/about_loan_screen.dart';
+import 'package:v1_micro_finance/screens/loan/help_screen.dart';
+import 'package:v1_micro_finance/screens/loan/loan_reques_screen.dart';
+import 'package:v1_micro_finance/screens/loan/loan_status_screen.dart';
+import 'package:v1_micro_finance/screens/loan/pay_emi_screen.dart';
 import 'package:v1_micro_finance/widgets/comon_appbar.dart';
 
 class QuickLoanScreen extends StatefulWidget {
@@ -19,27 +20,27 @@ class _QuickLoanScreenState extends State<QuickLoanScreen> {
       {
         "icon": Icons.currency_bitcoin,
         "text": "Loan Request",
-        "screen": DepositScreen()
+        "screen": LoanRequestScreen()
       }, //Loan Request
       {
         "icon": Icons.money_sharp,
         "text": "Pay EMI",
-        "screen": CheckBalanceScreen()
+        "screen": PayEmiScreen()
       }, //Pay EMI
       {
         "icon": Icons.edit_document,
         "text": "Loan Status",
-        "screen": WithdrawScreen()
+        "screen": LoanStatusScreen()
       }, //Loan Status
       {
         "icon": Icons.help,
         "text": "Help",
-        "screen": ReferralsScreen()
+        "screen": HelpScreen()
       }, //Help screen
       {
         "icon": Icons.info,
         "text": "About Loan",
-        "screen": QuickLoanScreen()
+        "screen": AboutloanScreen()
       }, //About Loan
     ];
 

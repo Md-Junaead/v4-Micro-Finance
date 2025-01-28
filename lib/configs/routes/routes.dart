@@ -7,7 +7,7 @@ import 'package:v1_micro_finance/screens/dashboard/packages_screen.dart';
 import 'package:v1_micro_finance/screens/dashboard/quick_loan_screen.dart';
 import 'package:v1_micro_finance/screens/dashboard/referrals_screen.dart';
 import 'package:v1_micro_finance/screens/dashboard/withdraw_screen.dart';
-import 'package:v1_micro_finance/screens/loan/about_info_screen.dart';
+import 'package:v1_micro_finance/screens/loan/about_loan_screen.dart';
 import 'package:v1_micro_finance/screens/loan/help_screen.dart';
 import 'package:v1_micro_finance/screens/loan/loan_reques_screen.dart';
 import 'package:v1_micro_finance/screens/loan/loan_status_screen.dart';
@@ -24,8 +24,8 @@ import 'package:v1_micro_finance/screens/splash_screen.dart';
 import 'package:v1_micro_finance/screens/bottom/statement_screen.dart';
 import 'package:v1_micro_finance/screens/auth/verification.dart';
 import 'package:v1_micro_finance/screens/started_screen.dart';
-import 'package:v1_micro_finance/screens/withdraw/bank_withdrawal_screen.dart';
-import 'package:v1_micro_finance/screens/withdraw/crypto_withdrawal_screen.dart';
+import 'package:v1_micro_finance/screens/withdraw/bank/withdrawal.dart';
+import 'package:v1_micro_finance/screens/withdraw/bank/crypto_withdrawal_screen.dart';
 import 'package:v1_micro_finance/test/test.dart';
 import 'package:v1_micro_finance/widgets/app_drawer.dart';
 import 'package:v1_micro_finance/widgets/bottom_nav_bar.dart';
@@ -131,7 +131,7 @@ class Routes {
 
       case RoutesName.aboutInfoScreen:
         return MaterialPageRoute(
-            builder: (BuildContext context) => AboutInfoScreen());
+            builder: (BuildContext context) => AboutloanScreen());
 
       case RoutesName.helpScreen:
         return MaterialPageRoute(
