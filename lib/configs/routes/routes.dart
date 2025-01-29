@@ -9,7 +9,6 @@ import 'package:v1_micro_finance/screens/dashboard/referrals_screen.dart';
 import 'package:v1_micro_finance/screens/dashboard/withdraw_screen.dart';
 import 'package:v1_micro_finance/screens/loan/about_loan_screen.dart';
 import 'package:v1_micro_finance/screens/loan/help_screen.dart';
-import 'package:v1_micro_finance/screens/loan/loan_reques_screen.dart';
 import 'package:v1_micro_finance/screens/loan/loan_status_screen.dart';
 import 'package:v1_micro_finance/screens/loan/pay_emi_screen.dart';
 import 'package:v1_micro_finance/screens/profile/edit_profile_screen.dart';
@@ -19,13 +18,19 @@ import 'package:v1_micro_finance/screens/auth/signin_screen.dart';
 import 'package:v1_micro_finance/screens/auth/signup_screen.dart';
 import 'package:v1_micro_finance/screens/profile/my_account_screen.dart';
 import 'package:v1_micro_finance/screens/profile/nominee_screen.dart';
-import 'package:v1_micro_finance/screens/profile/profile.dart';
-import 'package:v1_micro_finance/screens/splash_screen.dart';
+import 'package:v1_micro_finance/screens/onBord/splash_screen.dart';
 import 'package:v1_micro_finance/screens/bottom/statement_screen.dart';
 import 'package:v1_micro_finance/screens/auth/verification.dart';
-import 'package:v1_micro_finance/screens/started_screen.dart';
-import 'package:v1_micro_finance/screens/withdraw/bank/withdrawal.dart';
-import 'package:v1_micro_finance/screens/withdraw/bank/crypto_withdrawal_screen.dart';
+import 'package:v1_micro_finance/screens/onBord/on_board_screen.dart';
+import 'package:v1_micro_finance/screens/profile/profile.dart';
+import 'package:v1_micro_finance/screens/withdraw/deposite/deposit_bank.dart';
+import 'package:v1_micro_finance/screens/withdraw/deposite/deposit_gateway.dart';
+import 'package:v1_micro_finance/screens/withdraw/deposite/deposit_crypto.dart';
+import 'package:v1_micro_finance/screens/withdraw/loan/loan_bank.dart';
+import 'package:v1_micro_finance/screens/withdraw/loan/loan_gateway.dart';
+import 'package:v1_micro_finance/screens/withdraw/profit/profit_bank.dart';
+import 'package:v1_micro_finance/screens/withdraw/profit/profit_crypto.dart';
+import 'package:v1_micro_finance/screens/withdraw/profit/profit_gateway.dart';
 import 'package:v1_micro_finance/test/test.dart';
 import 'package:v1_micro_finance/widgets/app_drawer.dart';
 import 'package:v1_micro_finance/widgets/bottom_nav_bar.dart';
@@ -89,25 +94,13 @@ class Routes {
         return MaterialPageRoute(
             builder: (BuildContext context) => ReferralsScreen());
 
-      case RoutesName.withdrawScreen:
-        return MaterialPageRoute(
-            builder: (BuildContext context) => WithdrawScreen());
-
-      case RoutesName.bankWithdrawalScreen:
-        return MaterialPageRoute(
-            builder: (BuildContext context) => BankWithdrawalScreen());
-
-      case RoutesName.cryptoWithdrawalScreen:
-        return MaterialPageRoute(
-            builder: (BuildContext context) => CryptoWithdrawalScreen());
-
       case RoutesName.testScreen:
         return MaterialPageRoute(
             builder: (BuildContext context) => TestScreen());
 
-      case RoutesName.profileScreen:
+      case RoutesName.userProfile:
         return MaterialPageRoute(
-            builder: (BuildContext context) => ProfileScreen());
+            builder: (BuildContext context) => UserProfile());
 
       case RoutesName.nomineeScreen:
         return MaterialPageRoute(
@@ -136,18 +129,52 @@ class Routes {
       case RoutesName.helpScreen:
         return MaterialPageRoute(
             builder: (BuildContext context) => HelpScreen());
-
-      case RoutesName.loanRequestScreen:
+//WithDrawType Routes Name
+      case RoutesName.withDrawType:
         return MaterialPageRoute(
-            builder: (BuildContext context) => LoanRequestScreen());
+            builder: (BuildContext context) => WithDrawType());
+//EMI Routes Name
+      case RoutesName.payEmiScreen:
+        return MaterialPageRoute(
+            builder: (BuildContext context) => PayEmiScreen());
 
+//Loan Routes Name
       case RoutesName.loanStatusScreen:
         return MaterialPageRoute(
             builder: (BuildContext context) => LoanStatusScreen());
 
-      case RoutesName.payEmiScreen:
+      case RoutesName.loanGateway:
         return MaterialPageRoute(
-            builder: (BuildContext context) => PayEmiScreen());
+            builder: (BuildContext context) => LoanGateway());
+
+      case RoutesName.loanBank:
+        return MaterialPageRoute(builder: (BuildContext context) => LoanBank());
+
+//Deposit Routes Name
+      case RoutesName.depositGateway:
+        return MaterialPageRoute(
+            builder: (BuildContext context) => DepositGateway());
+
+      case RoutesName.depositBank:
+        return MaterialPageRoute(
+            builder: (BuildContext context) => DepositBank());
+
+      case RoutesName.depositCrypto:
+        return MaterialPageRoute(
+            builder: (BuildContext context) => DepositCrypto());
+//Profit Routes Name
+
+      case RoutesName.profitGateway:
+        return MaterialPageRoute(
+            builder: (BuildContext context) => ProfitGateway());
+
+      case RoutesName.profitCrypto:
+        return MaterialPageRoute(
+            builder: (BuildContext context) => ProfitCrypto());
+
+      case RoutesName.profitBank:
+        return MaterialPageRoute(
+            builder: (BuildContext context) => ProfitBank());
 
       default:
         return MaterialPageRoute(builder: (_) {

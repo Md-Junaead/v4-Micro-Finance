@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:v1_micro_finance/screens/auth/signin_screen.dart';
 import 'package:v1_micro_finance/screens/dashboard/check_balance_screen.dart';
 import 'package:v1_micro_finance/screens/dashboard/deposit_screen.dart';
 import 'package:v1_micro_finance/screens/dashboard/packages_screen.dart';
@@ -69,7 +68,7 @@ class _HomeScreenState extends State<HomeScreen> {
       {
         "icon": Icons.money_off,
         "text": "Withdraw",
-        "screen": WithdrawScreen()
+        "screen": WithDrawType()
       }, //WithdrawScreen
       {
         "icon": Icons.people,

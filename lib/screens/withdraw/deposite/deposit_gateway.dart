@@ -1,19 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:v1_micro_finance/screens/withdraw/bank/crypto_withdrawal_screen.dart';
-import 'package:v1_micro_finance/screens/withdraw/bank/withdrawal.dart';
+import 'package:v1_micro_finance/screens/withdraw/deposite/deposit_bank.dart';
+import 'package:v1_micro_finance/screens/withdraw/deposite/deposit_crypto.dart';
+import 'package:v1_micro_finance/widgets/comon_appbar.dart';
 
-class LoanWithdrawScreen extends StatefulWidget {
+class DepositGateway extends StatefulWidget {
   @override
-  _LoanWithdrawScreenState createState() => _LoanWithdrawScreenState();
+  _DepositGatewayState createState() => _DepositGatewayState();
 }
 
-class _LoanWithdrawScreenState extends State<LoanWithdrawScreen> {
+class _DepositGatewayState extends State<DepositGateway> {
   // Placeholder for balance data, this will be replaced with actual API data
   String withdrawalBalance = "Loading...";
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: const CommonAppBar(title: "Deposite Gateway"),
       body: Column(
         children: [
           // Part One: Withdrawal Balance at the top
@@ -71,7 +73,7 @@ class _LoanWithdrawScreenState extends State<LoanWithdrawScreen> {
                     icon: Icons.account_balance,
                     label: 'Bank',
                     color: Color(0xFF06426D),
-                    targetScreen: BankWithdrawalScreen(),
+                    targetScreen: DepositBank(),
                   ),
 
                   // Crypto Button
@@ -80,7 +82,7 @@ class _LoanWithdrawScreenState extends State<LoanWithdrawScreen> {
                     icon: Icons.currency_bitcoin,
                     label: 'Crypto',
                     color: Color(0xFF06426D),
-                    targetScreen: CryptoWithdrawalScreen(),
+                    targetScreen: DepositCrypto(),
                   ),
                 ],
               ),

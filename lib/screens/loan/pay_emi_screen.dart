@@ -14,7 +14,7 @@ class _PayEmiScreenState extends State<PayEmiScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const CommonAppBar(title: "Pay EMI Screen"),
+      appBar: const CommonAppBar(title: "Pay EMI"),
       body: Center(
         child: Text('This is the Pay EMI Screen'),
       ),

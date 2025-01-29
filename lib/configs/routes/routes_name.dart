@@ -53,8 +53,8 @@ class RoutesName {
   //TestScreen routes name
   static const String testScreen = 'TestScreen';
 
-  //ProfileScreen routes name
-  static const String profileScreen = 'ProfileScreen';
+  //UserProfile routes name
+  static const String userProfile = 'UserProfile';
 
   //NomineeScreen routes name
   static const String nomineeScreen = 'NomineeScreen';
@@ -85,4 +85,22 @@ class RoutesName {
 
   //PayEmiScreen routes name
   static const String payEmiScreen = 'PayEmiScreen';
+
+  // WithDrawType routes name
+  static const String withDrawType = 'WithDrawType';
+
+  //Deposit routes name
+  static const String depositGateway = 'DepositGateway';
+  static const String depositBank = 'DepositBank';
+  static const String depositCrypto = 'DepositCrypto';
+
+  //Loan routes name
+  static const String loanGateway = 'LoanGateway';
+  static const String loanBank = 'LoanBank';
+  static const String loanCrypto = 'LoanCrypto';
+
+  //Profit routes name
+  static const String profitGateway = 'ProfitGateway';
+  static const String profitBank = 'ProfitBank';
+  static const String profitCrypto = 'ProfitCrypto';
 }

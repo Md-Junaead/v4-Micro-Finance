@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:v1_micro_finance/screens/bottom/about_us_screen.dart';
 import 'package:v1_micro_finance/screens/bottom/home_screen.dart';
 import 'package:v1_micro_finance/screens/dashboard/quick_loan_screen.dart';
-import 'package:v1_micro_finance/screens/dashboard/referrals_screen.dart';
 import 'package:v1_micro_finance/screens/profile/profile.dart';
 
 class BottomNavBar extends StatefulWidget {
@@ -20,7 +19,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
     HomeScreen(), // Home screen
     AboutUsScreen(), // About Us screen
     QuickLoanScreen(), // Loan screen
-    ProfileScreen(), // Profile screen
+    UserProfile(), // Profile screen
   ];
 
   // Function to handle navigation when an icon is tapped
