@@ -4,14 +4,14 @@ import 'package:v1_micro_finance/widgets/comon_appbar.dart';
 
 // Verification Screen
 
-class LoanRequest extends StatefulWidget {
-  const LoanRequest({super.key});
+class LoanRequestScreen extends StatefulWidget {
+  const LoanRequestScreen({super.key});
 
   @override
-  State<LoanRequest> createState() => _LoanRequestState();
+  State<LoanRequestScreen> createState() => _LoanRequestScreenState();
 }
 
-class _LoanRequestState extends State<LoanRequest> {
+class _LoanRequestScreenState extends State<LoanRequestScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

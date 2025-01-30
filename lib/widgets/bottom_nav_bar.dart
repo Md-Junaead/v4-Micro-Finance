@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:v1_micro_finance/screens/bottom/about_us_screen.dart';
 import 'package:v1_micro_finance/screens/bottom/home_screen.dart';
 import 'package:v1_micro_finance/screens/dashboard/quick_loan_screen.dart';
+import 'package:v1_micro_finance/screens/policies/about_us.dart';
 import 'package:v1_micro_finance/screens/profile/profile.dart';
 
 class BottomNavBar extends StatefulWidget {
@@ -17,7 +17,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
   // List of screens corresponding to each bottom navigation item
   final List<Widget> _screens = [
     HomeScreen(), // Home screen
-    AboutUsScreen(), // About Us screen
+    AboutUs(), // About Us screen
     QuickLoanScreen(), // Loan screen
     UserProfile(), // Profile screen
   ];

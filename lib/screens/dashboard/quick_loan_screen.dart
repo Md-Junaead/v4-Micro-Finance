@@ -20,7 +20,7 @@ class _QuickLoanScreenState extends State<QuickLoanScreen> {
       {
         "icon": Icons.currency_bitcoin,
         "text": "Loan Request",
-        "screen": LoanRequest()
+        "screen": LoanRequestScreen()
       }, //Loan Request
       {
         "icon": Icons.money_sharp,

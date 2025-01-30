@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:v1_micro_finance/screens/dashboard/check_balance_screen.dart';
 import 'package:v1_micro_finance/screens/dashboard/deposit_screen.dart';
 import 'package:v1_micro_finance/screens/dashboard/packages_screen.dart';
+import 'package:v1_micro_finance/screens/dashboard/policies.dart';
 import 'package:v1_micro_finance/screens/dashboard/quick_loan_screen.dart';
 import 'package:v1_micro_finance/screens/dashboard/referrals_screen.dart';
 import 'package:v1_micro_finance/screens/dashboard/withdraw_screen.dart';
@@ -85,6 +86,7 @@ class _HomeScreenState extends State<HomeScreen> {
         "text": "Packages",
         "screen": PackagesScreen()
       },
+      {"icon": Icons.policy_outlined, "text": "Policies", "screen": Policies()},
     ];
 
     // Scaffold widget provides the app's structure
