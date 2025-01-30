@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:v1_micro_finance/screens/dashboard/referrals_screen.dart';
-import 'package:v1_micro_finance/screens/profile/my_account_screen.dart';
-import 'package:v1_micro_finance/screens/profile/nominee_screen.dart';
+import 'package:v1_micro_finance/screens/policies/about_us.dart';
+import 'package:v1_micro_finance/screens/policies/beneficiary_funds.dart';
+import 'package:v1_micro_finance/screens/policies/loan_policy.dart';
+import 'package:v1_micro_finance/screens/policies/privacy_policy.dart';
+import 'package:v1_micro_finance/screens/policies/withdrawal_policy.dart';
 import 'package:v1_micro_finance/widgets/comon_appbar.dart';
 
 class Policies extends StatelessWidget {
@@ -20,27 +22,27 @@ class Policies extends StatelessWidget {
     {
       "title": "Loan Policy",
       "icon": Icons.person,
-      "screen": UserScreen(),
+      "screen": LoanPolicy(),
     },
     {
       "title": "Beneficiary Funds",
       "icon": Icons.group,
-      "screen": NomineeScreen(),
+      "screen": BeneficiaryFunds(),
     },
     {
       "title": "Withdrawal Policy",
       "icon": Icons.people,
-      "screen": ReferralsScreen(),
+      "screen": WithdrawalPolicy(),
     },
     {
       "title": "Privacy Policy",
       "icon": Icons.help,
-      "screen": 'help_center_screen.dart'
+      "screen": PrivacyPolicy(),
     },
     {
       "title": "About us",
       "icon": Icons.help,
-      "screen": 'help_center_screen.dart'
+      "screen": AboutUs(),
     },
   ];
 

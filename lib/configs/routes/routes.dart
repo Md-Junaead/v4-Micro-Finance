@@ -41,6 +41,7 @@ import 'package:v1_micro_finance/screens/withdraw/profit/profit_gateway.dart';
 import 'package:v1_micro_finance/test/test.dart';
 import 'package:v1_micro_finance/widgets/app_drawer.dart';
 import 'package:v1_micro_finance/widgets/bottom_nav_bar.dart';
+import 'package:v1_micro_finance/screens/bottom/notification.dart';
 
 class Routes {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -79,6 +80,11 @@ class Routes {
       case RoutesName.appDrawer:
         return MaterialPageRoute(
             builder: (BuildContext context) => AppDrawer());
+
+      //Bottom routes name
+      case RoutesName.notificationScreen:
+        return MaterialPageRoute(
+            builder: (BuildContext context) => NotificationScreen());
 
 //BottomNavBar routes name
 

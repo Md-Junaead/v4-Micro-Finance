@@ -13,6 +13,9 @@ class RoutesName {
   //Drawer  routes name
   static const String appDrawer = 'AppDrawer';
 
+  //Bottom routes name
+  static const String notificationScreen = 'NotificationScreen';
+
   //BottomNavBar routes name
   static const String homeScreen = 'HomeScreen';
   static const String statementScreen = 'StatementScreen';

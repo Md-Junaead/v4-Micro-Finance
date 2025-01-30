@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:v1_micro_finance/screens/bottom/home_screen.dart';
-import 'package:v1_micro_finance/screens/dashboard/quick_loan_screen.dart';
-import 'package:v1_micro_finance/screens/policies/about_us.dart';
+import 'package:v1_micro_finance/screens/bottom/statement_screen.dart';
 import 'package:v1_micro_finance/screens/profile/profile.dart';
+import 'package:v1_micro_finance/screens/bottom/notification.dart';
 
 class BottomNavBar extends StatefulWidget {
   const BottomNavBar({super.key});
@@ -17,8 +17,8 @@ class _BottomNavBarState extends State<BottomNavBar> {
   // List of screens corresponding to each bottom navigation item
   final List<Widget> _screens = [
     HomeScreen(), // Home screen
-    AboutUs(), // About Us screen
-    QuickLoanScreen(), // Loan screen
+    StatementScreen(), // About Us screen
+    NotificationScreen(), // Loan screen
     UserProfile(), // Profile screen
   ];
 
@@ -49,12 +49,12 @@ class _BottomNavBarState extends State<BottomNavBar> {
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.info),
-            label: 'About Us',
+            icon: Icon(Icons.edit_document),
+            label: 'Statement',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.monetization_on),
-            label: 'Loan',
+            icon: Icon(Icons.notifications_active),
+            label: 'Notification',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
@@ -65,3 +65,16 @@ class _BottomNavBarState extends State<BottomNavBar> {
     );
   }
 }
+
+
+// bottomNavigationBar: BottomNavigationBar(
+      //   items: const [
+      //     BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+      //     BottomNavigationBarItem(icon: Icon(Icons.policy), label: 'Policy'),
+      //     BottomNavigationBarItem(
+      //         icon: Icon(Icons.settings), label: 'Settings'),
+      //   ],
+      //   onTap: (index) {
+      //     // Handle navigation based on index
+      //   },
+      // ),
