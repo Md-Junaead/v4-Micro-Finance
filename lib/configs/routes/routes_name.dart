@@ -5,13 +5,16 @@ class RoutesName {
   //SplashScreen routes name
   static const String splashScreen = 'SplashScreen';
   static const String startedScreen = 'StartedScreen';
+
+  //Drawer  routes name
+  static const String appDrawer = 'AppDrawer';
+
+  //Auth routes name
   static const String signInScreen = 'SignInScreen';
   static const String signupScreen = 'SignupScreen';
   static const String forgotPasswordScreen = 'ForgotPasswordScreen';
   static const String verificationScreen = 'VerificationScreen';
-
-  //Drawer  routes name
-  static const String appDrawer = 'AppDrawer';
+  static const String logout = 'Logout';
 
   //Bottom routes name
   static const String notificationScreen = 'NotificationScreen';

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:v1_micro_finance/screens/auth/logout.dart';
 import 'package:v1_micro_finance/screens/dashboard/referrals_screen.dart';
+import 'package:v1_micro_finance/screens/dashboard/help_screen.dart';
 import 'package:v1_micro_finance/screens/profile/my_account_screen.dart';
 import 'package:v1_micro_finance/screens/profile/nominee_screen.dart';
 import 'package:v1_micro_finance/widgets/user_app_bar.dart';
@@ -35,9 +37,9 @@ class UserProfile extends StatelessWidget {
     {
       "title": "Help Center",
       "icon": Icons.help,
-      "screen": 'help_center_screen.dart'
+      "screen": HelpScreen(),
     },
-    {"title": "Logout", "icon": Icons.logout, "screen": 'logout_screen.dart'},
+    {"title": "Logout", "icon": Icons.logout, "screen": Logout()},
   ];
 
   @override

@@ -8,7 +8,7 @@ import 'package:v1_micro_finance/screens/dashboard/quick_loan_screen.dart';
 import 'package:v1_micro_finance/screens/dashboard/referrals_screen.dart';
 import 'package:v1_micro_finance/screens/dashboard/withdraw_screen.dart';
 import 'package:v1_micro_finance/screens/loan/about_loan_screen.dart';
-import 'package:v1_micro_finance/screens/loan/help_screen.dart';
+import 'package:v1_micro_finance/screens/dashboard/help_screen.dart';
 import 'package:v1_micro_finance/screens/loan/loan_reques_screen.dart';
 import 'package:v1_micro_finance/screens/loan/loan_status_screen.dart';
 import 'package:v1_micro_finance/screens/loan/pay_emi_screen.dart';
@@ -60,6 +60,8 @@ class Routes {
       case RoutesName.startedScreen:
         return MaterialPageRoute(
             builder: (BuildContext context) => StartedScreen());
+
+//Auth Screen routes name
       case RoutesName.signInScreen:
         return MaterialPageRoute(
             builder: (BuildContext context) => SignInScreen());
@@ -124,6 +126,10 @@ class Routes {
         return MaterialPageRoute(
             builder: (BuildContext context) => QuickLoanScreen());
 
+      case RoutesName.helpScreen:
+        return MaterialPageRoute(
+            builder: (BuildContext context) => HelpScreen());
+
       case RoutesName.packagesScreen:
         return MaterialPageRoute(
             builder: (BuildContext context) => PackagesScreen());
@@ -146,10 +152,6 @@ class Routes {
       case RoutesName.aboutloanScreen:
         return MaterialPageRoute(
             builder: (BuildContext context) => AboutloanScreen());
-
-      case RoutesName.helpScreen:
-        return MaterialPageRoute(
-            builder: (BuildContext context) => HelpScreen());
 
       case RoutesName.loanRequestScreen:
         return MaterialPageRoute(

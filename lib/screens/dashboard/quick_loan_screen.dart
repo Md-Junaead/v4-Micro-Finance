@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:v1_micro_finance/screens/loan/about_loan_screen.dart';
-import 'package:v1_micro_finance/screens/loan/help_screen.dart';
+import 'package:v1_micro_finance/screens/dashboard/help_screen.dart';
 import 'package:v1_micro_finance/screens/loan/loan_reques_screen.dart';
 import 'package:v1_micro_finance/screens/loan/loan_status_screen.dart';
 import 'package:v1_micro_finance/screens/loan/pay_emi_screen.dart';

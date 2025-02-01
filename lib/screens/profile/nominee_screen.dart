@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:v1_micro_finance/configs/routes/routes_name.dart';
-import 'package:v1_micro_finance/widgets/bottom_nav_bar.dart';
 import 'package:v1_micro_finance/widgets/comon_appbar.dart';
 
 class NomineeScreen extends StatelessWidget {
