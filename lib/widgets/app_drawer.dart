@@ -75,16 +75,12 @@ class AppDrawer extends StatelessWidget {
             }),
             _buildSubMenu(context, Icons.arrow_drop_down, 'Withdraw', [
               _buildMenuItem(context, Icons.add, 'New Request', () {
-                Navigator.pushNamed(
-                    context,
-                    RoutesName
-                        .withdrawScreen); // Replace with actual navigation
+                Navigator.pushNamed(context,
+                    RoutesName.withDrawType); // Replace with actual navigation
               }),
               _buildMenuItem(context, Icons.query_stats, 'Status', () {
-                Navigator.pushNamed(
-                    context,
-                    RoutesName
-                        .withdrawScreen); // Replace with actual navigation
+                Navigator.pushNamed(context,
+                    RoutesName.withDrawType); // Replace with actual navigation
               }),
             ]),
             _buildMenuItem(context, Icons.link, 'Referral Link', () {

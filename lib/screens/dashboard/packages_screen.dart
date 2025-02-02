@@ -220,7 +220,7 @@ class PackagesScreen extends StatelessWidget {
             // Package 5
             GestureDetector(
               onTap: () {
-                Navigator.pushNamed(context, RoutesName.profileScreen);
+                Navigator.pushNamed(context, RoutesName.userProfile);
               },
               child: Container(
                 padding: EdgeInsets.all(16.0),

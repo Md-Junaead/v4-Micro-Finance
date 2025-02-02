@@ -1,13 +1,14 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:v1_micro_finance/widgets/comon_appbar.dart';
 
-class BankWithdrawalScreen extends StatefulWidget {
+class ProfitBank extends StatefulWidget {
   @override
-  _BankWithdrawalScreenState createState() => _BankWithdrawalScreenState();
+  _ProfitBankState createState() => _ProfitBankState();
 }
 
-class _BankWithdrawalScreenState extends State<BankWithdrawalScreen> {
+class _ProfitBankState extends State<ProfitBank> {
   // Form key to validate the input fields
   final _formKey = GlobalKey<FormState>();
 
@@ -58,25 +59,7 @@ class _BankWithdrawalScreenState extends State<BankWithdrawalScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PreferredSize(
-        preferredSize: Size.fromHeight(
-            kToolbarHeight + MediaQuery.of(context).size.height * 0.03),
-        child: AppBar(
-          centerTitle: true,
-          title: Padding(
-            padding: EdgeInsets.only(
-                top: MediaQuery.of(context).size.height *
-                    0.03), // Moves text 5% down
-            child: const Text("Crypto Withdraw"),
-          ),
-          backgroundColor: Color(0xFF06426D),
-          titleTextStyle: TextStyle(
-              color: Colors.white, fontSize: 35, fontWeight: FontWeight.bold),
-          shape: const RoundedRectangleBorder(
-            borderRadius: BorderRadius.vertical(bottom: Radius.circular(25)),
-          ),
-        ),
-      ),
+      appBar: const CommonAppBar(title: "Profit bank"),
       body: SingleChildScrollView(
         child: Column(
           children: [

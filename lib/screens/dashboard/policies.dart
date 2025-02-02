@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:v1_micro_finance/screens/auth/logout.dart';
-import 'package:v1_micro_finance/screens/dashboard/referrals_screen.dart';
-import 'package:v1_micro_finance/screens/dashboard/help_screen.dart';
-import 'package:v1_micro_finance/screens/profile/my_account_screen.dart';
-import 'package:v1_micro_finance/screens/profile/nominee_screen.dart';
-import 'package:v1_micro_finance/widgets/user_app_bar.dart';
+import 'package:v1_micro_finance/screens/policies/about_us.dart';
+import 'package:v1_micro_finance/screens/policies/beneficiary_funds.dart';
+import 'package:v1_micro_finance/screens/policies/loan_policy.dart';
+import 'package:v1_micro_finance/screens/policies/privacy_policy.dart';
+import 'package:v1_micro_finance/screens/policies/withdrawal_policy.dart';
+import 'package:v1_micro_finance/widgets/comon_appbar.dart';
 
-class UserProfile extends StatelessWidget {
+class Policies extends StatelessWidget {
   // Placeholder values for profile name and image
   String profileName = "User Name";
   String profileImageUrl =
@@ -20,36 +20,36 @@ class UserProfile extends StatelessWidget {
   // List of buttons with titles, icons, and corresponding screens
   final List<Map<String, dynamic>> buttons = [
     {
-      "title": "My Account",
+      "title": "Loan Policy",
       "icon": Icons.person,
-      "screen": UserScreen(),
+      "screen": LoanPolicy(),
     },
     {
-      "title": "Nominee",
+      "title": "Beneficiary Funds",
       "icon": Icons.group,
-      "screen": NomineeScreen(),
+      "screen": BeneficiaryFunds(),
     },
     {
-      "title": "Refer & Earn",
+      "title": "Withdrawal Policy",
       "icon": Icons.people,
-      "screen": ReferralsScreen(),
+      "screen": WithdrawalPolicy(),
     },
     {
-      "title": "Help Center",
+      "title": "Privacy Policy",
       "icon": Icons.help,
-      "screen": HelpScreen(),
+      "screen": PrivacyPolicy(),
     },
-    {"title": "Logout", "icon": Icons.logout, "screen": Logout()},
+    {
+      "title": "About us",
+      "icon": Icons.help,
+      "screen": AboutUs(),
+    },
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: UserAppBar(
-        profileName: profileName,
-        profileImageUrl: profileImageUrl,
-        fetchUserId: fetchUserId, // Fixed: Ensure fetchUserId is a function
-      ),
+      appBar: const CommonAppBar(title: "Policies"), // Custom app bar
       body: SafeArea(
         // Ensures the content does not overlap system UI elements like the status bar or notch
         child: SingleChildScrollView(

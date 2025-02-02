@@ -1,73 +1,70 @@
 class RoutesName {
-  //SplashScreen routes name
-  static const String splashScreen = 'SplashScreen';
-
-  //SignInScreen routes name
-  static const String signInScreen = 'SignInScreen';
-
-  //SignupScreen routes name
-  static const String signupScreen = 'SignupScreen';
-
-  //ForgotPasswordScreen routes name
-  static const String forgotPasswordScreen = 'ForgotPasswordScreen';
-
-  //home screen routes name
-  static const String homeScreen = 'HomeScreen';
-
-  //AboutUsScreen routes name
-  static const String aboutUsScreen = 'AboutUsScreen';
-
-  //EditProfileScreen routes name
-  static const String editProfileScreen = 'EditProfileScreen';
-
-  //StatementScreen routes name
-  static const String statementScreen = 'StatementScreen';
-
-  //VerificationScreen routes name
-  static const String verificationScreen = 'VerificationScreen';
-
-  //CheckBalanceScreen routes name
-  static const String checkBalanceScreen = 'CheckBalanceScreen';
-
-  //DepositScreen routes name
-  static const String depositScreen = 'DepositScreen';
-
-  //PackagesScreen routes name
-  static const String packagesScreen = 'PackagesScreen';
-
-  //QuickLoanScreen routes name
-  static const String quickLoanScreen = 'QuickLoanScreen';
-
-  //ReferralsScreen routes name
-  static const String referralsScreen = 'ReferralsScreen';
-
-  //WithdrawScreen routes name
-  static const String withdrawScreen = 'WithdrawScreen';
-
-  //BankWithdrawalScreen routes name
-  static const String bankWithdrawalScreen = 'BankWithdrawalScreen';
-
-  //CryptoWithdrawalScreen routes name
-  static const String cryptoWithdrawalScreen = 'CryptoWithdrawalScreen';
-
-  //TestScreen routes name
+//TestScreen routes name
   static const String testScreen = 'TestScreen';
 
-  //ProfileScreen routes name
-  static const String profileScreen = 'ProfileScreen';
-
-  //NomineeScreen routes name
-  static const String nomineeScreen = 'NomineeScreen';
-
-  //UserScreen routes name
-  static const String userScreen = 'UserScreen';
-
-  //StartedScreen routes name
+  //SplashScreen routes name
+  static const String splashScreen = 'SplashScreen';
   static const String startedScreen = 'StartedScreen';
 
+  //Drawer  routes name
+  static const String appDrawer = 'AppDrawer';
+
+  //Auth routes name
+  static const String signInScreen = 'SignInScreen';
+  static const String signupScreen = 'SignupScreen';
+  static const String forgotPasswordScreen = 'ForgotPasswordScreen';
+  static const String verificationScreen = 'VerificationScreen';
+  static const String logout = 'Logout';
+
+  //Bottom routes name
+  static const String notificationScreen = 'NotificationScreen';
+
   //BottomNavBar routes name
+  static const String homeScreen = 'HomeScreen';
+  static const String statementScreen = 'StatementScreen';
+  static const String userProfile = 'UserProfile';
   static const String bottomNavBar = 'BottomNavBar';
 
-  //AppDrawerScreen routes name
-  static const String appDrawer = 'AppDrawer';
+  //Dashboard routes name
+  static const String depositScreen = 'DepositScreen';
+  static const String checkBalanceScreen = 'CheckBalanceScreen';
+  static const String withDrawType = 'WithDrawType';
+  static const String referralsScreen = 'ReferralsScreen';
+  static const String quickLoanScreen = 'QuickLoanScreen';
+  static const String packagesScreen = 'PackagesScreen';
+
+  //User Profile Screen routes name
+  static const String editProfileScreen = 'EditProfileScreen';
+  static const String userScreen = 'UserScreen';
+  static const String nomineeScreen = 'NomineeScreen';
+
+  //Loan routes name
+  static const String aboutloanScreen = 'AboutloanScreen';
+  static const String helpScreen = 'HelpScreen';
+  static const String loanRequestScreen = 'LoanRequestScreen';
+  static const String loanStatusScreen = 'LoanStatusScreen';
+  static const String payEmiScreen = 'PayEmiScreen';
+
+  //Deposit routes name
+  static const String depositGateway = 'DepositGateway';
+  static const String depositBank = 'DepositBank';
+  static const String depositCrypto = 'DepositCrypto';
+
+  //Loan routes name
+  static const String loanGateway = 'LoanGateway';
+  static const String loanBank = 'LoanBank';
+  static const String loanCrypto = 'LoanCrypto';
+
+  //Profit routes name
+  static const String profitGateway = 'ProfitGateway';
+  static const String profitBank = 'ProfitBank';
+  static const String profitCrypto = 'ProfitCrypto';
+
+//Policies Routes Name
+  static const String policies = 'Policies';
+  static const String aboutUs = 'AboutUs';
+  static const String beneficiaryFunds = 'BeneficiaryFunds';
+  static const String loanPolicy = 'LoanPolicy';
+  static const String privacyPolicy = 'PrivacyPolicy';
+  static const String withdrawalPolicy = 'WithdrawalPolicy';
 }

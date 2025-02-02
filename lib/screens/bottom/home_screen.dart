@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:v1_micro_finance/screens/auth/signin_screen.dart';
 import 'package:v1_micro_finance/screens/dashboard/check_balance_screen.dart';
 import 'package:v1_micro_finance/screens/dashboard/deposit_screen.dart';
 import 'package:v1_micro_finance/screens/dashboard/packages_screen.dart';
+import 'package:v1_micro_finance/screens/dashboard/policies.dart';
 import 'package:v1_micro_finance/screens/dashboard/quick_loan_screen.dart';
 import 'package:v1_micro_finance/screens/dashboard/referrals_screen.dart';
-import 'package:v1_micro_finance/screens/dashboard/withdraw_screen.dart';
+import 'package:v1_micro_finance/screens/dashboard/help_screen.dart';
 import 'package:v1_micro_finance/widgets/app_drawer.dart';
 import 'package:v1_micro_finance/widgets/appbar.dart';
 
@@ -48,7 +48,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   // Demo API call to simulate fetching balance
   Future<String> fetchBalance() async {
-    await Future.delayed(const Duration(seconds: 2)); // Simulate delay
+    await Future.delayed(const Duration(seconds: 1)); // Simulate delay
     return "\$1500"; // Return a dummy balance after the delay
   }
 
@@ -57,23 +57,53 @@ class _HomeScreenState extends State<HomeScreen> {
     // List of buttons with icon, text, and the screen it navigates to
     final List<Map<String, dynamic>> buttons = [
       {
-        "icon": Icons.attach_money,
-        "text": "Deposit",
+        "icon": Icons.add,
+        "text": "Make your first deposit",
         "screen": DepositScreen()
-      },
+      }, //DepositScreen
+
+      // {
+      //   "icon": Icons.money_off,
+      //   "text": "Withdraw",
+      //   "screen": WithDrawType()
+      // }, //WithdrawScreen
       {
-        "icon": Icons.account_balance,
-        "text": "Check Balance",
+        "icon": Icons.paid_outlined,
+        "text": "Profit Balance",
         "screen": CheckBalanceScreen()
       },
-      {"icon": Icons.money_off, "text": "Withdraw", "screen": WithdrawScreen()},
-      {"icon": Icons.people, "text": "Referrals", "screen": ReferralsScreen()},
-      {"icon": Icons.speed, "text": "Quick Loan", "screen": QuickLoanScreen()},
+      {
+        "icon": Icons.real_estate_agent,
+        "text": "Quick Loan",
+        "screen": QuickLoanScreen()
+      }, //QuickLoanScreen
+      {
+        "icon": Icons.people,
+        "text": "Referrals",
+        "screen": ReferralsScreen()
+      }, //ReferralsScreen
       {
         "icon": Icons.card_giftcard,
-        "text": "Packages",
+        "text": "Saving Plan",
         "screen": PackagesScreen()
-      },
+      }, //Saving Plan
+
+      {
+        "icon": Icons.contact_support,
+        "text": "help",
+        "screen": HelpScreen()
+      }, //HelpScreen
+      {
+        "icon": Icons.policy_outlined,
+        "text": "Policies",
+        "screen": Policies()
+      }, //Policies
+
+      {
+        "icon": Icons.play_circle,
+        "text": "Watch Now",
+        "screen": Policies()
+      }, //Play Now
     ];
 
     // Scaffold widget provides the app's structure
@@ -89,7 +119,7 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Padding(
           padding: EdgeInsets.symmetric(
             vertical: MediaQuery.of(context).size.height *
-                0.05, // 5% vertical padding from top & bottom
+                0.01, // 5% vertical padding from top & bottom
           ),
           child: SizedBox(
             width:
@@ -99,8 +129,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   true, // Ensures the grid only takes the necessary space
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2, // 2 items per row in the grid
-                mainAxisSpacing: 20, // Space between rows
-                crossAxisSpacing: 20, // Space between columns
+                mainAxisSpacing: 5, // Space between rows
+                crossAxisSpacing: 5, // Space between columns
                 childAspectRatio: 1, // Equal width and height for grid items
               ),
               itemCount: buttons.length, // Total number of buttons in the grid
@@ -140,6 +170,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             color: Color(0xFF06426D), // Text color
                             fontSize: 16, // Font size of the text
                           ),
+                          textAlign: TextAlign.center,
                         ),
                       ],
                     ),

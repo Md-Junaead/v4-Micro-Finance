@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:v1_micro_finance/configs/routes/routes_name.dart';
+import 'package:v1_micro_finance/widgets/comon_appbar.dart';
 
 class NomineeScreen extends StatelessWidget {
   const NomineeScreen({Key? key}) : super(key: key);
@@ -16,10 +17,7 @@ class NomineeScreen extends StatelessWidget {
     };
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Nominee Details'),
-        centerTitle: true,
-      ),
+      appBar: CommonAppBar(title: "Nominee details"),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
